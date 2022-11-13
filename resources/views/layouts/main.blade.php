@@ -1,39 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Fonts -->
-    <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
-        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous">
-    </script>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
-    <!-- bootsrap pooper -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
+    <!-- Fonts -->
+    <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
-        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous">
-    </script>
 
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    
-    <link href="{{ URL::asset('/css/style.css')}}" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
-
-    <link rel="stylesheet" href="{{ asset('js/jquery-3.6.1.min.js') }}">
-
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
 
     <!-- progressbar -->
     <script src="{{ asset('js/progressbar.min.js') }}"></script>
@@ -43,9 +26,9 @@
 
     <!-- Bootstrap core CSS -->
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
-     
-    <title>Laravel</title>
 
+
+    <title>Laravel</title>
 
 
 </head>
@@ -54,17 +37,17 @@
 
     <header>
         <div class="containar" id="nav-container">
-            <nav class="navbar navbar-expand-lg fixed-top">
+             <nav class="navbar navbar-expand-md fixed-top">
                 <a href="#" class="navbar-brand">
-                    <img id="logo" src="{{ asset('img/hdcagency_logo.svg') }}" alt="AG Agency" />
+                    <img id="logo" class="imagem"src="{{ asset('img/A.jpg') }}" alt="AG Agency" />
                 </a>
                 <button class="navbar-toggler navbar-dark bg-dark" type="button" data-toggle="collapse"
                     data-target="#navbar-links" aria-controls="navbarCollapse" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon "></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
-                    <div class="navbar-nav ">
+                <div class="navbar-collapse  justify-content-end" id="navbar-links">
+                    <div class="navbar-nav">
                         <a class="navbar-item nav-link" href="#mainSlider" id="home-menu">Home</a>
                         <a class="navbar-item nav-link" href="#about-area" id="about-menu">A agência</a>
                         <a class="navbar-item nav-link" href="#services-area" id="service-menu">Serviços</a>
@@ -77,51 +60,48 @@
         </div>
     </header>
     <main role="main">
-
-        <div class="container-fluid">
-            <div id="mainSlider" class="carousel slide" data-ride="carousel" data-interval="10000">
-                <ol class="carousel-indicators">
-                    <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
-                    <li data-target="#mainSlider" data-slide-to="1"></li>
-                    <li data-target="#mainSlider" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="{{ asset('img/banner1.png') }}" alt="First slide">
-                        <div class="carousel-caption  d-md-block">
-                            <h2> Quer criar e-cormece? </h2>
-                            <p>Conte conosco, temos mais de 30 lojas. </p>
-                            <a href="#" class="main-btn">Ver porte portfolio</a>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="{{ asset('img/banner2.png') }}" alt="Second slide">
-                        <div class="carousel-caption d-md-block">
-                            <h2> Está querendo tirar o projeto do papel? </h2>
-                            <p>Nossa equipe de Engenharia de software está pronto para lhe atender.</p>
-                            <a href="#" class="main-btn">Entre em contato</a>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="{{ asset('img/banner3.png') }}" alt="Third slide">
-                        <div class="carousel-caption d-md-block">
-                            <h2>Está buscando manutenção do seu software? </h2>
-                            <p>AG conta com engenheiros altamente qualificados para resolver o seu problema.</p>
-                            <a href="#" class="main-btn">Entre em contato</a>
-                        </div>
+        <div id="mainSlider" class="carousel slide" data-ride="carousel" data-interval="10000">
+            <ol class="carousel-indicators">
+                <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
+                <li data-target="#mainSlider" data-slide-to="1"></li>
+                <li data-target="#mainSlider" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="{{ asset('img/banner1.png') }}" alt="First slide">
+                    <div class="carousel-caption  d-md-block">
+                        <h2> Quer criar e-cormece? </h2>
+                        <p> Conte conosco, temos mais de 30 lojas. </p>
+                        <a href="#" class="main-btn"> Ver porte portfolio </a>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#mainSlider" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#mainSlider" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="{{ asset('img/banner2.png') }}" alt="Second slide">
+                    <div class="carousel-caption d-md-block">
+                        <h2> Está querendo tirar o projeto do papel? </h2>
+                        <p>Nossa equipe de Engenharia de software está pronto para lhe atender.</p>
+                        <a href="#" class="main-btn">Entre em contato</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="{{ asset('img/banner3.png') }}" alt="Third slide">
+                    <div class="carousel-caption d-md-block">
+                        <h2>Está buscando manutenção do seu software? </h2>
+                        <p>AG conta com engenheiros altamente qualificados para resolver o seu problema.</p>
+                        <a href="#" class="main-btn">Entre em contato</a>
+                    </div>
+                </div>
             </div>
-
+            <a class="carousel-control-prev" href="#mainSlider" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#mainSlider" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
+
         <! ---Sobre a empresa !-->
             <div id="about-area">
                 <div class="container">

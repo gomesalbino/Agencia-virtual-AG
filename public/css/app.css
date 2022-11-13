@@ -12228,11 +12228,6 @@ select {
   .sm\:text-right {
     text-align: right;
   }
-
-  .sm\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
 }
 @media (min-width: 768px) {
 
