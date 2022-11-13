@@ -1,0 +1,32 @@
+header{
+    background: #333;
+}
+@media screen and(min-width: 0px){
+    header{
+        background: yellow;
+    }
+}
+
+
+@media screen and(min-width: 768px){
+    header{
+        background: red;
+        color: red;
+    }
+}
+
+
+@media screen and(min-width: 928px){
+    header{
+        background: pink;
+        color: red;
+    }
+}
+
+
+@media screen and(min-width: 1200px){
+    header{
+        background: green;
+        color: green;
+    }
+}
